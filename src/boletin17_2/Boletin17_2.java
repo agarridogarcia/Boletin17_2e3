@@ -15,6 +15,7 @@ public class Boletin17_2 {
         curso.notaAlta();
         curso.notaMedia();
         curso.alumnosAprobados();
+        curso.visualizarAlumno();
     }
     
 }

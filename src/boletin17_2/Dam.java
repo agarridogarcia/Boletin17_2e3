@@ -78,39 +78,20 @@ public class Dam {
         
     }
     public void visualizarAlumno(){
-        
-        String auxNome = JOptionPane.showInputDialog("Introducir nome que quere buscar");
-        boolean atopado = false;
-        
-        for (int i=0; i<notas.length; i++){
+        String nome=JOptionPane.showInputDialog("Introduce nome do alumno");
+        for(int i=0;i<nomes.length;i++){
             
-            if(auxNome.equals(nomes[i])){
-                System.out.println("A nota do alumno : " + nomes[i] + " é " + notas[i]);
-                atopado = true;
-            }  
-                    
         
-    }
-            if(atopado==false){
-                System.out.println("O alumno non está na lista");
-                
+            if(nome.equals(nomes[i])){
+                System.out.println("O alumno está na lista");
             }
- 
-}
-    public void ordenarNotasCrecente(){
-        
-        for(int i=0;i<(notas.length-1);i++){
-            for(int j=i+1;j<notas.length;j++){
-                
-		if(notas[i]>notas[j]){
-					
-		int variableauxiliar=notas[i];
-	        notas[i]=notas[j];
-	        notas[j]=variableauxiliar;
-            }
+            else 
+                System.out.println("non está");
+       
         }
         }
-    }
+        
+    
    
     
 }
