@@ -91,8 +91,9 @@ public class Dam {
             
        
         }
-         System.out.println("non está na lista");
-         nomel=false;
+        if(nomel=false)
+        System.out.println("Non está na lista");
+         
         }
         
     
