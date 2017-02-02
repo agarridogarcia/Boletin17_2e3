@@ -79,7 +79,7 @@ public class Dam {
     }
     public void visualizarAlumno(){
         
-        String auxNome = JOptionPane.showInputDialog("Introducir nome a buscar");
+        String auxNome = JOptionPane.showInputDialog("Introducir nome que quere buscar");
         boolean atopado = false;
         
         for (int i=0; i<notas.length; i++){
@@ -92,7 +92,7 @@ public class Dam {
         
     }
             if(atopado==false){
-                System.out.println("O alumno introducido non está na lista");
+                System.out.println("O alumno non está na lista");
                 
             }
  
