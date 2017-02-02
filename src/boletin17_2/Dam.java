@@ -6,8 +6,8 @@ import javax.swing.JOptionPane;
 
 
 public class Dam {
-    private int [] notas= new int [4];
-    private String [] nomes= new String [4];
+    private int [] notas={4,6,8,9};
+    private String [] nomes= {"Pepe","Ana","Juan","Luis"};
     
     
 
@@ -79,16 +79,20 @@ public class Dam {
     }
     public void visualizarAlumno(){
         String nome=JOptionPane.showInputDialog("Introduce nome do alumno");
+        
+        boolean nomel=false;
         for(int i=0;i<nomes.length;i++){
             
         
             if(nome.equals(nomes[i])){
                 System.out.println("O alumno está na lista");
+                nomel=true;
             }
-            else 
-                System.out.println("non está");
+            
        
         }
+         System.out.println("non está na lista");
+         nomel=false;
         }
         
     
