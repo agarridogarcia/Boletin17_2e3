@@ -2,12 +2,18 @@
 package boletin17_2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import javax.swing.JOptionPane;
 
 
 public class Dam {
     private int [] notas={4,6,8,9};
     private String [] nomes= {"Pepe","Ana","Juan","Luis"};
+    
+
+    
+    
     
     
 
@@ -96,9 +102,16 @@ public class Dam {
          
         }
         
-    
-   
-    
+    public void ordenar(){
+        Arrays.sort(notas);
+        for (int i : notas) {
+            System.out.print(i +",");
+                                        
+        
 }
+}
+}
+
+     
 
 
