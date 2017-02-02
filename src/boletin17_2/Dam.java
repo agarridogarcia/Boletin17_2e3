@@ -18,7 +18,7 @@ public class Dam {
     
    
     public void cargarArray(){
-        for(int f=0; f<notas.length-1;f++){
+        for(int f=0; f<notas.length;f++){
             notas[f]=pedirNotas();
             nomes[f] = pedirNome();
         }
@@ -34,7 +34,7 @@ public class Dam {
     }    
 
     public void visualizar(){
-        for(int f=0;f<notas.length-1;f++)
+        for(int f=0;f<notas.length;f++)
             System.out.println(notas[f]);
     }
     
