@@ -103,14 +103,28 @@ public class Dam {
         }
         
     public void ordenar(){
-        Arrays.sort(notas);
-        for (int i : notas) {
-            System.out.print(i +",");
-                                        
+        int aux;
+        String auxNome;
+        for(int i=0;i<notas.length-1;i++)
+            for(int j=i+1;j<notas.length;j++)
+                if(notas[i]>notas[j]){
+                    aux=notas[i];
+                    notas[i]=notas[j];
+                    notas[j]=aux;
+                    auxNome=nomes[i];
+                    nomes[i]=nomes[j];
+                    nomes[j]=auxNome;
+                }
+       
+                }   
+    public void visualizarOrdenar(){
+        for(int i=0;i<notas.length;i++)
+            System.out.println("Nombre: " + nomes[i]+ " Nota: " + notas[i]);
+    }
         
 }
-}
-}
+
+
 
      
 

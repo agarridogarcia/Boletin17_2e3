@@ -17,6 +17,7 @@ public class Boletin17_2 {
         curso.alumnosAprobados();
         curso.visualizarAlumno();
         curso.ordenar();
+        curso.visualizarOrdenar();
     }
     
 }
